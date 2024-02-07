@@ -45,12 +45,12 @@ public class FolderTreeTest {
         FolderTree.Folder root = new FolderTree.Folder("root");
         FolderTree.Folder subFolder1 = new FolderTree.Folder("pronunciation");
         FolderTree.Folder subFolder2 = new FolderTree.Folder("report");
-        FolderTree.Folder subFolder3 = new FolderTree.Folder("programs");
+        FolderTree.Folder subFolder3 = new FolderTree.Folder("pronrams");
         root.addChild(subFolder1);
         root.addChild(subFolder2);
         root.addChild(subFolder3);
 
-        List<String> expected = Arrays.asList("pronunciation", "programs");
+        List<String> expected = Arrays.asList("pronunciation", "pronrams");
         List<String> actual = tree.findFoldersContainingPron(root);
 
         assertEquals(expected, actual);
