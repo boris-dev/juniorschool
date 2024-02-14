@@ -1,14 +1,14 @@
-package ru.liga.dcs;
+package ru.liga.dcs.lesson01;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 /**
- * Класс FolderTree представляет собой структуру дерева папок.
+ * Класс FolderTree02 представляет собой структуру дерева папок.
  * Этот класс предоставляет методы для работы с деревом папок, включая поиск папок по заданному критерию.
  */
-public class FolderTree {
+public class FolderTree02 {
 
     static class Folder {
         private final String name;

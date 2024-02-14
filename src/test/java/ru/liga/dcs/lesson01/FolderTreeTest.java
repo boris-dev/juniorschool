@@ -1,6 +1,7 @@
-package ru.liga.dcs;
+package ru.liga.dcs.lesson01;
 
 import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.List;
 import static org.junit.Assert.*;
@@ -9,11 +10,11 @@ public class FolderTreeTest {
 
     @Test
     public void testFindFoldersContainingPron() {
-        FolderTree tree = new FolderTree();
-        FolderTree.Folder root = new FolderTree.Folder("root");
-        FolderTree.Folder subFolder1 = new FolderTree.Folder("pronunciation");
-        FolderTree.Folder subFolder2 = new FolderTree.Folder("documents");
-        FolderTree.Folder subFolder3 = new FolderTree.Folder("programs");
+        FolderTree02 tree = new FolderTree02();
+        FolderTree02.Folder root = new FolderTree02.Folder("root");
+        FolderTree02.Folder subFolder1 = new FolderTree02.Folder("pronunciation");
+        FolderTree02.Folder subFolder2 = new FolderTree02.Folder("documents");
+        FolderTree02.Folder subFolder3 = new FolderTree02.Folder("programs");
         root.addChild(subFolder1);
         root.addChild(subFolder2);
         subFolder2.addChild(subFolder3);
@@ -26,10 +27,10 @@ public class FolderTreeTest {
 
     @Test
     public void testFindFoldersContainingPron_NoMatch() {
-        FolderTree tree = new FolderTree();
-        FolderTree.Folder root = new FolderTree.Folder("root");
-        FolderTree.Folder subFolder1 = new FolderTree.Folder("documents");
-        FolderTree.Folder subFolder2 = new FolderTree.Folder("reports");
+        FolderTree02 tree = new FolderTree02();
+        FolderTree02.Folder root = new FolderTree02.Folder("root");
+        FolderTree02.Folder subFolder1 = new FolderTree02.Folder("documents");
+        FolderTree02.Folder subFolder2 = new FolderTree02.Folder("reports");
         root.addChild(subFolder1);
         root.addChild(subFolder2);
 
@@ -41,11 +42,11 @@ public class FolderTreeTest {
 
     @Test
     public void testFindFoldersContainingPron_AllMatch() {
-        FolderTree tree = new FolderTree();
-        FolderTree.Folder root = new FolderTree.Folder("root");
-        FolderTree.Folder subFolder1 = new FolderTree.Folder("pronunciation");
-        FolderTree.Folder subFolder2 = new FolderTree.Folder("report");
-        FolderTree.Folder subFolder3 = new FolderTree.Folder("pronrams");
+        FolderTree02 tree = new FolderTree02();
+        FolderTree02.Folder root = new FolderTree02.Folder("root");
+        FolderTree02.Folder subFolder1 = new FolderTree02.Folder("pronunciation");
+        FolderTree02.Folder subFolder2 = new FolderTree02.Folder("report");
+        FolderTree02.Folder subFolder3 = new FolderTree02.Folder("pronrams");
         root.addChild(subFolder1);
         root.addChild(subFolder2);
         root.addChild(subFolder3);
