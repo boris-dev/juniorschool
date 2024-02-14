@@ -12,7 +12,7 @@ public class CharacterCounterTest {
         assertThat(counter.countCharacterOccurrences("Привет, как дела?", 'а')).isEqualTo(2);
         assertThat(counter.countCharacterOccurrences("Hello, world!", 'z')).isEqualTo(0);
         assertThat(counter.countCharacterOccurrences("Java", 'J')).isEqualTo(1);
-        assertThat(counter.countCharacterOccurrences("mississippi", 'i')).isEqualTo(3);
+        assertThat(counter.countCharacterOccurrences("mississippi", 'i')).isEqualTo(4);
         assertThat(counter.countCharacterOccurrences("", 'a')).isEqualTo(0);
     }
 
