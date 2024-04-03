@@ -1,4 +1,4 @@
-package ru.liga.dcs.badcode.lesson8;
+package ru.liga.dcs.badcode.lesson08;
 
 import java.util.List;
 

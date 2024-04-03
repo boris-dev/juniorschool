@@ -1,7 +1,8 @@
 package ru.liga.dcs.lesson06;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StringUtilityTest {
 
@@ -20,9 +21,11 @@ public class StringUtilityTest {
         assertThat(StringUtility02.canFormString("", "")).isTrue();
     }
 
-    @Test(expected = NullPointerException.class)
+    @Test
     public void testCanFormString_nullInput() {
-        StringUtility02.canFormString(null, "abc");
+        assertThrows(NullPointerException.class, () -> {
+            StringUtility02.canFormString(null, "abc");
+        });
     }
 
     // Можно добавить дополнительные тесты для проверки других сценариев

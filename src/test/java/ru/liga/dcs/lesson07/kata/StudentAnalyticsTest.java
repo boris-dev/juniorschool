@@ -1,6 +1,6 @@
 package ru.liga.dcs.lesson07.kata;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
 import java.util.Arrays;
 import java.util.List;
